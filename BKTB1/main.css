@@ -16,11 +16,10 @@
   background-color: transparent;
 }
 
-.box .bng-menu {
+.box .bangmenu {
   position: relative;
   width: 1470px;
   height: 5853px;
-  background-color: #7b86a84c;
 }
 
 .box .element {
@@ -42,7 +41,7 @@
   border-radius: 8px;
 }
 
-.box .nt-lin-kt {
+.box .nutlienket {
   display: flex;
   width: 770px;
   align-items: flex-start;
@@ -75,4 +74,7 @@
   font-size: 20px;
   letter-spacing: 0;
   line-height: normal;
+}
+body {
+background-color: #7b86a84c;
 }
