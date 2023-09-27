@@ -4,16 +4,389 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dân Chơi Custom</title>
-    <link rel="icon" type="image" href="1.PNG">
     <style>
-        body {
-            background-color: #7b86a84c;
-        }
+      .landing-page {
+        background-color: #7b86a8;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
+      
+      .landing-page .div {
+        background-color: #7b86a8;
+        overflow: hidden;
+        width: 1440px;
+        height: 2045px;
+        position: relative;
+      }
+      
+      .landing-page .overlap-group {
+        height: 1342px;
+        top: 109px;
+        background-color: #ffffff;
+        background-image: url(./img/rectangle-4285.png);
+        background-size: cover;
+        background-position: 50% 50%;
+        position: absolute;
+        width: 1440px;
+        left: 0;
+      }
+      
+      .landing-page .website-d-n-ch-i {
+        position: absolute;
+        width: 913px;
+        top: 139px;
+        left: 280px;
+        font-family: "Open Sans-Regular", Helvetica;
+        font-weight: 400;
+        color: #5f5f5f;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 27.2px;
+      }
+      
+      .landing-page .trang-web-c-t-o-v-i {
+        position: absolute;
+        top: 307px;
+        left: 36px;
+        font-family: "Open Sans-Regular", Helvetica;
+        font-weight: 400;
+        color: #5f5f5f;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: 40.8px;
+      }
+      
+      .landing-page .gunpla-gundam {
+        position: absolute;
+        top: 588px;
+        left: 36px;
+        font-family: "Open Sans-Regular", Helvetica;
+        font-weight: 400;
+        color: #5f5f5f;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: 40.8px;
+      }
+      
+      .landing-page .text-wrapper {
+        position: absolute;
+        top: 41px;
+        left: 532px;
+        font-family: "Poppins-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #262626;
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 56px;
+        white-space: nowrap;
+      }
+      
+      .landing-page .overlap {
+        height: 487px;
+        top: 1606px;
+        position: absolute;
+        width: 1440px;
+        left: 0;
+      }
+      
+      .landing-page .rectangle {
+        position: absolute;
+        width: 1440px;
+        height: 402px;
+        top: 85px;
+        left: 0;
+        background-color: #f7f7f7;
+        border-radius: 20px;
+      }
+      
+      .landing-page .group {
+        position: absolute;
+        width: 86px;
+        height: 171px;
+        top: 208px;
+        left: 437px;
+      }
+      
+      .landing-page .text-wrapper-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: "Poppins-Medium", Helvetica;
+        font-weight: 500;
+        color: #262626;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .landing-page .text-wrapper-3 {
+        position: absolute;
+        top: 47px;
+        left: 0;
+        opacity: 0.6;
+        font-family: "Open Sans-Regular", Helvetica;
+        font-weight: 400;
+        color: #272d2c;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .landing-page .text-wrapper-4 {
+        position: absolute;
+        top: 81px;
+        left: 0;
+        opacity: 0.6;
+        font-family: "Open Sans-Regular", Helvetica;
+        font-weight: 400;
+        color: #272d2c;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .landing-page .text-wrapper-5 {
+        position: absolute;
+        top: 115px;
+        left: 0;
+        opacity: 0.6;
+        font-family: "Open Sans-Regular", Helvetica;
+        font-weight: 400;
+        color: #272d2c;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .landing-page .text-wrapper-6 {
+        position: absolute;
+        top: 149px;
+        left: 0;
+        opacity: 0.6;
+        font-family: "Open Sans-Regular", Helvetica;
+        font-weight: 400;
+        color: #272d2c;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .landing-page .frame {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 17px;
+        position: absolute;
+        top: 208px;
+        left: 140px;
+      }
+      
+      .landing-page .your-logo-here {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+      }
+      
+      .landing-page .d-n-ch-i-custom-n-i {
+        position: relative;
+        width: fit-content;
+        opacity: 0.6;
+        font-family: "Open Sans-Regular", Helvetica;
+        font-weight: 400;
+        color: #5f5f5f;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+      }
+      
+      .landing-page .frame-2 {
+        display: flex;
+        width: 1300px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 27px 50px;
+        position: absolute;
+        top: 0;
+        left: 19px;
+        background-color: #262626;
+        border-radius: 10px;
+      }
+      
+      .landing-page .frame-3 {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+      
+      .landing-page .text-wrapper-7 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Poppins-Medium", Helvetica;
+        font-weight: 500;
+        color: #ffffff;
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .landing-page .p {
+        position: relative;
+        width: fit-content;
+        font-family: "Open Sans-Regular", Helvetica;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .landing-page .button-component {
+        display: flex;
+        width: 162px;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 8px;
+        position: relative;
+        background-color: #ffffff;
+      }
+      
+      .landing-page .button {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Inter-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #262626;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+        all: unset;
+        box-sizing: border-box;
+      }
+      
+      .landing-page .header {
+        position: absolute;
+        width: 1385px;
+        height: 107px;
+        top: 2px;
+        left: 0;
+        background-color: transparent;
+      }
+      
+      .landing-page .logo-chnh {
+        position: absolute;
+        width: 130px;
+        height: 107px;
+        top: 0;
+        left: 0;
+      }
+      
+      .landing-page .bng-menu {
+        position: absolute;
+        width: 1001px;
+        height: 49px;
+        top: 18px;
+        left: 384px;
+        background-color: #ffffff;
+        border-radius: 8px;
+      }
+      
+      .landing-page .navbar {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 45px;
+        position: relative;
+        top: 11px;
+        left: 33px;
+      }
+      
+      .landing-page .text-wrapper-8 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Open Sans-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
     </style>
   </head>
   <body>
-    <h1>
-        Đây là trang thư của trang home
-    </h1>
+    <div class="landing-page">
+      <div class="div">
+        <div class="overlap-group">
+          <p class="website-d-n-ch-i">
+            Website Dân chơi Custom được tạo ra từ cộng đồng những người chơi Gundam Việt Nam, nhằm cho những người dùng
+            <br />thích và muốn bán những sản phẩm của mình có một nơi trao đổi buôn bán
+          </p>
+          <p class="trang-web-c-t-o-v-i">
+            Trang web được tạo với mục đích tạo ra một nên tảng buôn bán, trao đổi hàng hóa giữa những người dùng cùng
+            thuộc<br />
+            trong cộng đồng Gundam Việt Nam trên các nền tảng mạng xã hội, được quản lý bới một người owner chính, những
+            <br />người dùng thông qua owner này có thể đăng bài lên trang để bán hàng. Hàng được giao bán có thể là
+            hàng mới, hàng <br />đã qua sử dụng hoặc là hàng custom do các anh em yêu thích custom.
+          </p>
+          <p class="gunpla-gundam">
+            Gunpla (Gundam Plastic Model) là một dòng đồ chơi mô hình lắp ráp hoặc mô hình kim loại đã lắp ráp sẳn do
+            các nhà<br />phát hành cung cấp. Gunpla đã nổi tiếng trên thế giới và được coi là một xu hướng hiện nay.
+            Nhưng ở Việt Nam, thú<br />chơi này vẫn chỉ được coi là một thứ đồ chơi cho trẻ con và không được công nhận,
+            dù vậy cộng đồng người chơi Gundam <br />ở Việt Nam vẫn đông đảo và không giảm di. Vì vậy trang web này được
+            tạo nên nhằm giúp mọi người có một nơi tìm kiếm <br />và phát triển đam mê.
+          </p>
+          <div class="text-wrapper">Giới thiệu chung</div>
+        </div>
+        <div class="overlap">
+          <div class="rectangle"></div>
+          <div class="group">
+            <div class="text-wrapper-2">Liên hệ</div>
+            <div class="text-wrapper-3">Hotline:</div>
+            <div class="text-wrapper-4">Email:</div>
+            <div class="text-wrapper-5">Địa chỉ:</div>
+            <div class="text-wrapper-6">Facebook:</div>
+          </div>
+          <div class="frame">
+            <img class="your-logo-here" src="img/your-logo-here.png" />
+            <p class="d-n-ch-i-custom-n-i">Dân chơi Custom<br />Nơi Gundam user được thỏa <br />sức sáng tạo.</p>
+          </div>
+          <div class="frame-2">
+            <div class="frame-3">
+              <div class="text-wrapper-7">Thắc mắc liên hệ</div>
+              <p class="p">Viết những điều bạn thắc mắc hay bất kỳ câu hỏi và gửi qua cho chúng tôi</p>
+            </div>
+            <div class="button-component"><button class="button">Gmail</button></div>
+          </div>
+        </div>
+        <header class="header">
+          <img class="logo-chnh" src="img/logo-ch-nh.svg" />
+          <div class="bng-menu">
+            <div class="navbar">
+              <div class="text-wrapper-8">Trang chủ</div>
+              <div class="text-wrapper-8">Sản phẩm</div>
+              <div class="text-wrapper-8">Đơn hàng</div>
+              <div class="text-wrapper-8">Thanh toán</div>
+              <div class="text-wrapper-8">Liên hệ</div>
+              <div class="text-wrapper-8">Hotline:............</div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
   </body>
 </html>
